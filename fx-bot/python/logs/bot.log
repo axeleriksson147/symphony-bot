@@ -1,12 +1,12 @@
-2020-05-17 00:33:15,241 - root - INFO - Loading config from: /Users/axel.eriksson/symphony-bots/fx-bot/resources/config.json
-2020-05-17 00:33:15,241 - root - INFO - {
-    "sessionAuthHost": "https://st2.symphony.com:443",
+2020-05-17 01:17:04,610 - root - INFO - Loading config from: /Users/axel.eriksson/symphony-bots/fx-bot/resources/config.json
+2020-05-17 01:17:04,611 - root - INFO - {
+    "sessionAuthHost": "https://rtc1.symphony.com:443",
     "sessionAuthPort": 443,
-    "keyAuthHost": "https://st2.symphony.com:443",
+    "keyAuthHost": "https://rtc1.symphony.com:443",
     "keyAuthPort": 443,
-    "podHost": "https://st2.symphony.com:443",
+    "podHost": "https://rtc1.symphony.com:443",
     "podPort": 443,
-    "agentHost": "https://st2.symphony.com:443",
+    "agentHost": "https://rtc1.symphony.com:443",
     "agentPort": 443,
     "authType": "rsa",
     "botCertPath": "",
@@ -39,15 +39,15 @@
     "agentProxyRequestObject": {},
     "keyManagerProxyRequestObject": {}
 }
-2020-05-17 00:33:15,242 - root - DEBUG - RSA Auth/authenticate()
-2020-05-17 00:33:15,242 - root - DEBUG - RSA Auth/authenticate() --> needed to authenticate
-2020-05-17 00:33:15,242 - root - DEBUG - RSA_auth/get_session_token() function started
-2020-05-17 00:33:15,242 - root - DEBUG - RSA_auth/getJWT() function started
-2020-05-17 00:33:17,525 - root - DEBUG - RSA/session token success
-2020-05-17 00:33:17,525 - root - DEBUG - RSA_auth/get_keyauth()
-2020-05-17 00:33:17,526 - root - DEBUG - RSA_auth/getJWT() function started
-2020-05-17 00:33:18,200 - root - DEBUG - RSA/key manager token success
-2020-05-17 00:33:18,200 - asyncio - DEBUG - Using selector: KqueueSelector
-2020-05-17 00:33:18,201 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/start_datafeed()
-2020-05-17 00:33:18,201 - root - DEBUG - bot_client/get_agent_session() - creating agent session
-2020-05-17 00:33:18,875 - root - DEBUG - api_client/handle_error() function started
+2020-05-17 01:17:04,611 - root - DEBUG - RSA Auth/authenticate()
+2020-05-17 01:17:04,611 - root - DEBUG - RSA Auth/authenticate() --> needed to authenticate
+2020-05-17 01:17:04,611 - root - DEBUG - RSA_auth/get_session_token() function started
+2020-05-17 01:17:04,612 - root - DEBUG - RSA_auth/getJWT() function started
+2020-05-17 01:17:05,492 - root - DEBUG - RSA/session token success
+2020-05-17 01:17:05,492 - root - DEBUG - RSA_auth/get_keyauth()
+2020-05-17 01:17:05,492 - root - DEBUG - RSA_auth/getJWT() function started
+2020-05-17 01:17:06,153 - root - DEBUG - RSA/key manager token success
+2020-05-17 01:17:06,154 - asyncio - DEBUG - Using selector: KqueueSelector
+2020-05-17 01:17:06,154 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/start_datafeed()
+2020-05-17 01:17:06,154 - root - DEBUG - bot_client/get_agent_session() - creating agent session
+2020-05-17 01:17:06,765 - root - DEBUG - api_client/handle_error() function started

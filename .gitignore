@@ -1,2 +1,10 @@
 lib/
 venv/
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea

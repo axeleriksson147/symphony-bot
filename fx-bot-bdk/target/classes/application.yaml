@@ -1,0 +1,17 @@
+server:
+    port: 8080
+    servlet:
+        display-name: fx-bot-bdk
+        context-path: /fx-bot-bdk
+resources: src/main/resources
+certs: certs
+bot-config: '${resources}/bot-config.json'
+logging:
+    file: '${resources}/logs/fx-bot-bdk.log'
+    level:
+        ROOT: INFO
+        com.symphony.bdk.bot.sdk: DEBUG
+        com.symphony.certification.fx-bot-bdk: DEBUG
+samples:
+    quote-command:
+        api-key: your-key-here

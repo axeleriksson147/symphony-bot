@@ -2,14 +2,19 @@
   "name": "gif",
   "version": "1.0.1",
   "description": "Sample Symphony Bot",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js",
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "symphony-api-client-node": "^1.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
   }
 }

@@ -11,8 +11,8 @@
     "botCertPath": "",
     "botCertName": "",
     "botCertPassword": "",
-    "botPrivateKeyPath": "../rsa/",
-    "botPrivateKeyName": "devcertbot34-private.pem",
+    "botPrivateKeyPath": "rsa/",
+    "botPrivateKeyName": "rsa-private-devcertbot34.pem",
     "botUsername": "devcertbot34",
     "botEmailAddress": "devcertbot34@bots.symphony.com",
     "appCertPath": "",
@@ -21,6 +21,5 @@
     "proxyURL": "",
     "proxyUsername": "",
     "proxyPassword": "",
-    "authTokenRefreshPeriod": "30",
-    "truststorePath": ""
+    "authTokenRefreshPeriod": "30"
 }

@@ -1,21 +1,21 @@
-2020-05-17 01:26:06,951 - root - INFO - Loading config from: /Users/axel.eriksson/symphony-bots/fx-bot/resources/config.json
-2020-05-17 01:26:06,951 - root - INFO - {
-    "sessionAuthHost": "https://st2.symphony.com:443",
+2020-05-18 00:49:17,179 - root - INFO - Loading config from: /Users/axel.eriksson/symphony-bots/fx-bot/resources/config.json
+2020-05-18 00:49:17,180 - root - INFO - {
+    "sessionAuthHost": "https://develop2.symphony.com:443",
     "sessionAuthPort": 443,
-    "keyAuthHost": "https://st2.symphony.com:443",
+    "keyAuthHost": "https://develop2.symphony.com:443",
     "keyAuthPort": 443,
-    "podHost": "https://st2.symphony.com:443",
+    "podHost": "https://develop2.symphony.com:443",
     "podPort": 443,
-    "agentHost": "https://st2.symphony.com:443",
+    "agentHost": "https://develop2.symphony.com:443",
     "agentPort": 443,
     "authType": "rsa",
     "botCertPath": "",
     "botCertName": "",
     "botCertPassword": "",
     "botPrivateKeyPath": "../rsa/",
-    "botPrivateKeyName": "rsa-private-axelbot.pem",
-    "botUsername": "axelbot",
-    "botEmailAddress": "axelbot@email.com",
+    "botPrivateKeyName": "devcertbot34-private.pem",
+    "botUsername": "devcertbot34",
+    "botEmailAddress": "devcertbot34@bots.symphony.com",
     "appCertPath": "",
     "appCertName": "",
     "appCertPassword": "",
@@ -24,7 +24,7 @@
     "proxyPassword": "",
     "authTokenRefreshPeriod": "30",
     "truststorePath": "",
-    "botRSAPath": "../rsa/rsa-private-axelbot.pem",
+    "botRSAPath": "../rsa/devcertbot34-private.pem",
     "p.12": "",
     "podProxyURL": "",
     "podProxyUsername": "",
@@ -39,15 +39,198 @@
     "agentProxyRequestObject": {},
     "keyManagerProxyRequestObject": {}
 }
-2020-05-17 01:26:06,951 - root - DEBUG - RSA Auth/authenticate()
-2020-05-17 01:26:06,952 - root - DEBUG - RSA Auth/authenticate() --> needed to authenticate
-2020-05-17 01:26:06,952 - root - DEBUG - RSA_auth/get_session_token() function started
-2020-05-17 01:26:06,952 - root - DEBUG - RSA_auth/getJWT() function started
-2020-05-17 01:26:07,806 - root - DEBUG - RSA/session token success
-2020-05-17 01:26:07,806 - root - DEBUG - RSA_auth/get_keyauth()
-2020-05-17 01:26:07,806 - root - DEBUG - RSA_auth/getJWT() function started
-2020-05-17 01:26:15,657 - root - DEBUG - RSA/key manager token success
-2020-05-17 01:26:15,657 - asyncio - DEBUG - Using selector: KqueueSelector
-2020-05-17 01:26:15,658 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/start_datafeed()
-2020-05-17 01:26:15,658 - root - DEBUG - bot_client/get_agent_session() - creating agent session
-2020-05-17 01:26:16,338 - root - DEBUG - api_client/handle_error() function started
+2020-05-18 00:49:17,180 - root - DEBUG - RSA Auth/authenticate()
+2020-05-18 00:49:17,180 - root - DEBUG - RSA Auth/authenticate() --> needed to authenticate
+2020-05-18 00:49:17,180 - root - DEBUG - RSA_auth/get_session_token() function started
+2020-05-18 00:49:17,180 - root - DEBUG - RSA_auth/getJWT() function started
+2020-05-18 00:49:17,931 - root - DEBUG - RSA/session token success
+2020-05-18 00:49:17,932 - root - DEBUG - RSA_auth/get_keyauth()
+2020-05-18 00:49:17,932 - root - DEBUG - RSA_auth/getJWT() function started
+2020-05-18 00:49:18,537 - root - DEBUG - RSA/key manager token success
+2020-05-18 00:49:18,538 - asyncio - DEBUG - Using selector: KqueueSelector
+2020-05-18 00:49:18,538 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/start_datafeed()
+2020-05-18 00:49:18,538 - root - DEBUG - bot_client/get_agent_session() - creating agent session
+2020-05-18 00:49:19,328 - root - DEBUG - DataFeedClient/create_datafeed() --> 80bec52c-d2ad-4eb5-b366-eae02913b86a
+2020-05-18 00:49:19,328 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:49:19,329 - root - DEBUG - bot_client/get_agent_session() - creating async agent session
+2020-05-18 00:49:19,337 - sym_api_client_python.datafeed_event_service - DEBUG - Waiting on new exception, queue size: 0
+2020-05-18 00:49:24,004 - root - DEBUG - UserClient/get_session_user()
+2020-05-18 00:49:24,005 - root - DEBUG - bot_client/get_pod_session() - creating pod session
+2020-05-18 00:49:24,569 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "QbrhxpTEVT5FFPMfG-2Qzn___o3bLCSpbQ",
+            "timestamp": 1589755763542,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\" class=\"wysiwyg\"><p>/watch EUR</p></div>",
+            "data": "{}",
+            "user": {
+                "userId": 349026222349705,
+                "firstName": "Axel",
+                "lastName": "Eriksson",
+                "displayName": "Axel Eriksson",
+                "email": "axel.eriksson@symphony.com",
+                "username": "axel.eriksson@symphony.com"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "DESKTOP-41.0.0-10825-MacOSX-10.15.4-Chrome-81.0.4044.138",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "c1b1d9be-7cb3-4633-90a2-4c41a61ec18c"
+        }
+    }
+}
+2020-05-18 00:49:24,570 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 1
+2020-05-18 00:49:24,570 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:49:24,570 - sym_api_client_python.datafeed_event_service - DEBUG - AsyncDataFeedEventService/handle_events() --> event-type:MESSAGESENT
+2020-05-18 00:49:24,571 - sym_api_client_python.datafeed_event_service - DEBUG - async msg_sent_handler function started
+2020-05-18 00:49:24,571 - root - DEBUG - Room Message Received
+2020-05-18 00:49:24,571 - root - DEBUG - MessageClient/send_msg()
+2020-05-18 00:49:25,308 - sym_api_client_python.datafeed_event_service - INFO - Responded to message in: 1.767s. Including 0.7387s inside the bot
+2020-05-18 00:49:25,309 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "FnFwZze1E_2fPLbMrmGbDH___o3bLB78bQ",
+            "timestamp": 1589755764995,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\">Hello Axel, hope you are doing well!</div>",
+            "user": {
+                "userId": 349026222349707,
+                "displayName": "Dev Cert Bot 34",
+                "email": "devcertbot34@bots.symphony.com",
+                "username": "devcertbot34"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "Agent-2.57.0-Linux-4.14.143-91.122.amzn1.x86_64",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "6e8a7fb4-6fd7-4505-99f5-affb6fd7a822"
+        }
+    }
+}
+2020-05-18 00:49:25,309 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 0
+2020-05-18 00:49:25,309 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:49:40,317 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "IrjhOZZ1kGCy8CTVD_x7vH___o3bK-SRbQ",
+            "timestamp": 1589755779950,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\" class=\"wysiwyg\"><p>/watch SEK</p></div>",
+            "data": "{}",
+            "user": {
+                "userId": 349026222349705,
+                "firstName": "Axel",
+                "lastName": "Eriksson",
+                "displayName": "Axel Eriksson",
+                "email": "axel.eriksson@symphony.com",
+                "username": "axel.eriksson@symphony.com"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "DESKTOP-41.0.0-10825-MacOSX-10.15.4-Chrome-81.0.4044.138",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "c1b1d9be-7cb3-4633-90a2-4c41a61ec18c"
+        }
+    }
+}
+2020-05-18 00:49:40,317 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 1
+2020-05-18 00:49:40,317 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:49:40,318 - sym_api_client_python.datafeed_event_service - DEBUG - AsyncDataFeedEventService/handle_events() --> event-type:MESSAGESENT
+2020-05-18 00:49:40,318 - sym_api_client_python.datafeed_event_service - DEBUG - async msg_sent_handler function started
+2020-05-18 00:49:40,318 - root - DEBUG - Room Message Received
+2020-05-18 00:49:40,319 - root - DEBUG - MessageClient/send_msg()
+2020-05-18 00:49:41,008 - sym_api_client_python.datafeed_event_service - INFO - Responded to message in: 1.058s. Including 0.6909s inside the bot
+2020-05-18 00:49:41,008 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "JtYQl-1Zew18xHfioFfvln___o3bK-HCbQ",
+            "timestamp": 1589755780669,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\">Hello Axel, hope you are doing well!</div>",
+            "user": {
+                "userId": 349026222349707,
+                "displayName": "Dev Cert Bot 34",
+                "email": "devcertbot34@bots.symphony.com",
+                "username": "devcertbot34"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "Agent-2.57.0-Linux-4.14.143-91.122.amzn1.x86_64",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "6e8a7fb4-6fd7-4505-99f5-affb6fd7a822"
+        }
+    }
+}
+2020-05-18 00:49:41,009 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 0
+2020-05-18 00:49:41,009 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:50:04,931 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "28POthL5OI4borTALG8e3H___o3bK4UCbQ",
+            "timestamp": 1589755804413,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\" class=\"wysiwyg\"><p>asd</p></div>",
+            "data": "{}",
+            "user": {
+                "userId": 349026222349705,
+                "firstName": "Axel",
+                "lastName": "Eriksson",
+                "displayName": "Axel Eriksson",
+                "email": "axel.eriksson@symphony.com",
+                "username": "axel.eriksson@symphony.com"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "DESKTOP-41.0.0-10825-MacOSX-10.15.4-Chrome-81.0.4044.138",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "c1b1d9be-7cb3-4633-90a2-4c41a61ec18c"
+        }
+    }
+}
+2020-05-18 00:50:04,931 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 1
+2020-05-18 00:50:04,931 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:50:04,932 - sym_api_client_python.datafeed_event_service - DEBUG - AsyncDataFeedEventService/handle_events() --> event-type:MESSAGESENT
+2020-05-18 00:50:04,932 - sym_api_client_python.datafeed_event_service - DEBUG - async msg_sent_handler function started
+2020-05-18 00:50:04,932 - root - DEBUG - Room Message Received
+2020-05-18 00:50:04,932 - root - DEBUG - MessageClient/send_msg()
+2020-05-18 00:50:05,671 - sym_api_client_python.datafeed_event_service - INFO - Responded to message in: 1.259s. Including 0.74s inside the bot
+2020-05-18 00:50:05,672 - sym_api_client_python.datafeed_event_service - INFO - AsyncDataFeedEventService/read_datafeed() --> Incoming data from read_datafeed(): {
+    "messageSent": {
+        "message": {
+            "messageId": "x2NFvHW2l8rNWSI4RuaaiX___o3bK4E-bQ",
+            "timestamp": 1589755805377,
+            "message": "<div data-format=\"PresentationML\" data-version=\"2.0\">Hello Axel, hope you are doing well!</div>",
+            "user": {
+                "userId": 349026222349707,
+                "displayName": "Dev Cert Bot 34",
+                "email": "devcertbot34@bots.symphony.com",
+                "username": "devcertbot34"
+            },
+            "stream": {
+                "streamId": "CyvtIqSNNSqHYV0L_qQt8n___o3bLGB6dA",
+                "streamType": "ROOM"
+            },
+            "externalRecipients": false,
+            "userAgent": "Agent-2.57.0-Linux-4.14.143-91.122.amzn1.x86_64",
+            "originalFormat": "com.symphony.messageml.v2",
+            "sid": "6e8a7fb4-6fd7-4505-99f5-affb6fd7a822"
+        }
+    }
+}
+2020-05-18 00:50:05,672 - sym_api_client_python.datafeed_event_service - DEBUG - Event queued. Current queue size: 0
+2020-05-18 00:50:05,672 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:50:35,899 - sym_api_client_python.datafeed_event_service - DEBUG - AsyncDataFeedEventService() - no data coming in from datafeed: 80bec52c-d2ad-4eb5-b366-eae02913b86a
+2020-05-18 00:50:35,899 - root - DEBUG - DataFeedClient/read_datafeed_async()
+2020-05-18 00:51:06,144 - sym_api_client_python.datafeed_event_service - DEBUG - AsyncDataFeedEventService() - no data coming in from datafeed: 80bec52c-d2ad-4eb5-b366-eae02913b86a
+2020-05-18 00:51:06,144 - root - DEBUG - DataFeedClient/read_datafeed_async()

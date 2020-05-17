@@ -8,3 +8,5 @@ venv/
 # file: ~/.gitignore_global
 .DS_Store
 .idea
+
+node_modules/

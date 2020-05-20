@@ -1,14 +1,21 @@
 import Symphony from 'symphony-api-client-node'
-Symphony.setDebugMode(true)
 
-const botHearsSomething = (event: any, messages: any) => {
-  messages.forEach((message: any, index: any) => {
-    let reply_message = 'Hello ' + message.user.firstName + ', hope you are doing well!!'
-    Symphony.sendMessage(message.stream.streamId, reply_message, null, Symphony.MESSAGEML_FORMAT)
+const onMessage = messages => {
+  messages.forEach(message => {
+    console.log(
+      'The BOT heard "' + message.messageText + '" from ' + message.user.displayName
+    )
   })
 }
 
+const onError = error => {
+  console.error('Error reading data feed', error)
+}
+
 Symphony.initBot(__dirname + '/config.json')
-  .then((symAuth: any) => {
-    Symphony.getDatafeedEventsService(botHearsSomething)
-  })
+.then(() => {
+  Symphony.getDatafeedEventsService({ onMessage, onError })
+})
+.fail(err => {
+  console.error(err)
+})

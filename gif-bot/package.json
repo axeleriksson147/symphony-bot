@@ -11,6 +11,7 @@
   "author": "Axel Eriksson",
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^3.0.0-beta.5",
     "symphony-api-client-node": "^1.0.11"
   },
   "devDependencies": {

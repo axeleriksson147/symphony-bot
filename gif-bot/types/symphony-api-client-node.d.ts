@@ -13,7 +13,7 @@ declare namespace Symphony {
     sid: string;
     messageText: string;
   }
-  
+
   export interface User {
     userId: number;
     firstName: string;
@@ -22,18 +22,18 @@ declare namespace Symphony {
     email: string;
     username: string;
   }
-  
+
   export interface Stream {
     streamId: string;
     streamType: string;
-  }  
+  }
 
-  export const MESSAGEML_FORMAT: 'messageML';
+  export const MESSAGEML_FORMAT: 'messageML'
 
-  export const PRESENTATIONML_FORMAT: 'presentationML';
+  export const PRESENTATIONML_FORMAT: 'presentationML'
 
   export const sessionToken: {
-  };
+  }
 
   export function acceptConnectionRequest(userId: any, sessionToken: any): void;
 
@@ -78,7 +78,7 @@ declare namespace Symphony {
   export function getConnections(status: any, userIds: any, sessionToken: any): void;
 
   export function getDatafeedEventsService(options: {
-    onMessage: any; 
+    onMessage: any;
     onError: any;
   }): any;
 
@@ -156,7 +156,7 @@ declare namespace Symphony {
 
   export function sendConnectionRequest(userId: any, sessionToken: any): void;
 
-  export function sendMessage(conversationId: any, message: any, data: any, format: any, sessionToken?: any): any;
+  export function sendMessage(conversationId: any, message: any, data: any, format: 'messageML' | 'presentationML', sessionToken?: any): any;
 
   export function sendMessageWithAttachment(conversationId: any, message: any, data: any, fileName: any, fileType: any, fileContent: any, format: any): any;
 

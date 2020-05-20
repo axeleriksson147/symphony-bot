@@ -1,14 +1,19 @@
 import Symphony from 'symphony-api-client-node'
 import fetch from 'node-fetch'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const regex = /^\/g .*/
 
 const onMessage = (messages: Symphony.Message[]): void => {
-  messages.forEach((message) => {
+  messages.forEach(async (message) => {
     if (regex.test(message.messageText)) {
       const searchQuery = message.messageText.split('/g ')[1]
-      fetch()
-      Symphony.sendMessage(message.stream.streamId, searchQuery, undefined, Symphony.MESSAGEML_FORMAT)
+      const response = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${process.env.GIPHY_API_KEY}&tag=${searchQuery}`)
+      const body = await response.json()
+      const gifUrl = body.data.fixed_width_downsampled_url
+      await Symphony.sendMessage(message.stream.streamId, `<img src="${gifUrl}"/>`, undefined, Symphony.MESSAGEML_FORMAT)
       return
     }
     console.log(

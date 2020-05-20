@@ -1,7 +1,8 @@
 import Symphony from 'symphony-api-client-node'
+import { Message } from './types/symphony-api-client-node'
 
-const onMessage = messages => {
-  messages.forEach(message => {
+const onMessage = (messages: Message[]) => {
+  messages.forEach((message) => {
     console.log(
       'The BOT heard "' + message.messageText + '" from ' + message.user.displayName
     )

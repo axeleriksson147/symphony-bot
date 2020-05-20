@@ -1,5 +1,10 @@
 declare namespace Symphony {
 
+  export interface ErrorMessage {
+    code: boolean;
+    message: string;
+  }
+
   export interface Message {
     messageId: string;
     timestamp: number;
@@ -156,7 +161,7 @@ declare namespace Symphony {
 
   export function sendConnectionRequest(userId: any, sessionToken: any): void;
 
-  export function sendMessage(conversationId: any, message: any, data: any, format: 'messageML' | 'presentationML', sessionToken?: any): any;
+  export function sendMessage(conversationId: any, message: any, data: any, format: 'messageML' | 'presentationML', sessionToken?: any): any | ErrorMessage;
 
   export function sendMessageWithAttachment(conversationId: any, message: any, data: any, fileName: any, fileType: any, fileContent: any, format: any): any;
 

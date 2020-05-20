@@ -1,32 +1,32 @@
-export interface Message {
-  messageId: string;
-  timestamp: number;
-  message: string;
-  data: string;
-  user: User;
-  stream: Stream;
-  externalRecipients: boolean;
-  userAgent: string;
-  originalFormat: string;
-  sid: string;
-  messageText: string;
-}
-
-export interface User {
-  userId: number;
-  firstName: string;
-  lastName: string;
-  displayName: string;
-  email: string;
-  username: string;
-}
-
-export interface Stream {
-  streamId: string;
-  streamType: string;
-}
-
 declare namespace Symphony {
+
+  export interface Message {
+    messageId: string;
+    timestamp: number;
+    message: string;
+    data: string;
+    user: User;
+    stream: Stream;
+    externalRecipients: boolean;
+    userAgent: string;
+    originalFormat: string;
+    sid: string;
+    messageText: string;
+  }
+  
+  export interface User {
+    userId: number;
+    firstName: string;
+    lastName: string;
+    displayName: string;
+    email: string;
+    username: string;
+  }
+  
+  export interface Stream {
+    streamId: string;
+    streamType: string;
+  }  
 
   export const MESSAGEML_FORMAT: 'messageML';
 

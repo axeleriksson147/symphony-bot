@@ -14,10 +14,10 @@ const onMessage = (messages: Symphony.Message[]): void => {
       const giphyBody = await giphyResponse.json()
       const gifUrl = giphyBody?.data.fixed_height_downsampled_url
       const response = gifUrl
-        ? await Symphony.sendMessage(message.stream.streamId, `<img src="${gifUrl}"/>`, undefined, Symphony.MESSAGEML_FORMAT)
-        : await Symphony.sendMessage(message.stream.streamId, 'No GIF found <emoji shortcode="cry"></emoji>', undefined, Symphony.MESSAGEML_FORMAT)
+        ? Symphony.sendMessage(message.stream.streamId, `<img src="${gifUrl}"/>`, undefined, Symphony.MESSAGEML_FORMAT)
+        : Symphony.sendMessage(message.stream.streamId, 'No GIF found <emoji shortcode="cry"></emoji>', undefined, Symphony.MESSAGEML_FORMAT)
 
-      if (response.code === 400) {
+      if ((response as Symphony.SendMessageErrorResponse).code === 400) {
         console.log(response)
       }
     }
